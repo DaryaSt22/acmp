@@ -33,7 +33,7 @@
 #             print(string[element - 1])
 
 
-
+# Этот вариант решения приняли автотесты
 my_el = input()
 string = "qwertyuiopasdfghjklzxcvbnm"
 index = string.index(my_el)
