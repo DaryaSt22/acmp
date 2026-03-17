@@ -11,9 +11,9 @@ if circle_diameter <= min(w, h):
 else:
     print("No")
 
-w, h, r = map(int, input("Введите три числа через пробел: ").split())
+w, h, r = map(float, input().split())
 circle_diameter = 2 * r
 if circle_diameter <= min(w, h):
-    print("Yes")
+    print("YES")
 else:
-    print("No")
+    print("NO")
