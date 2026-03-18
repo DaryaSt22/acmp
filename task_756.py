@@ -11,6 +11,9 @@
 
 
 m, n = map(int, input().split())
-v = (m * n) - 1
-result = (m * n) - v
-print(result)
+horizontal = m * (n - 1)
+vertical = n * (m - 1)
+number_of_vertices = horizontal + vertical # количество ребер
+number_of_edges = m * n #  это количество узлов (точек) в сетке.
+the_number_in_the_main_tree = number_of_vertices - (number_of_edges - 1)
+print(the_number_in_the_main_tree)
