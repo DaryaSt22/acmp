@@ -6,7 +6,6 @@
 
 
 k, m = map(int, input().split())
-number_of_mattresses_per_layer = k * m
 one_rectangle = k * k # один прямоуголник в матраце
 number_of_layers = one_rectangle * m
 print(number_of_layers)
