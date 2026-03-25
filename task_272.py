@@ -6,5 +6,16 @@
 # Выходной текстовый файл должен содержать одно целое число - сумму максимума из чисел с четными номерами
 # и минимума из чисел с нечетными номерами.
 
+#  min_odd и max_even
 
-a1, a2, a3, a4 = map(int, input().split())
+numbers = list(map(int, input().split()))
+odd = []
+even = []
+for count, num in enumerate(numbers, start=1):
+    if count % 2 == 0:
+        even.append(num)
+    else:
+        odd.append(num)
+
+print(min(odd) + max(even))
+
