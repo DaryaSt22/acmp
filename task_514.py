@@ -9,15 +9,14 @@
 
 
 k = int(input())
-i = 0
 used = 0
 answer = 0
 
 for i in range(1, k + 1):
-    if ...:
-        used = ...
-        answer = ...
+    if used + i <= k:
+        used = used + i
+        answer = i
     else:
         break
 
-    print(answer)
+print(answer)
