@@ -3,11 +3,27 @@
 # и единиц (без пробелов). Суммарное количество цифр от 1 до 100.
 # В единственную строку выходного файла нужно вывести искомую длину цепочки нулей.
 
-
+# Wrong answer
 numbers = input()
 
 for i in numbers:
-    if i == 0:
+    if i == '0':
         print(len(numbers))
 
 print(len(numbers))
+
+
+# This answer correct
+numbers = input()
+
+max_zeros = 0
+current = 0
+
+for i in numbers:
+    if i == '0':
+        current += 1
+        max_zeros = max(max_zeros, current)
+    else:
+        current = 0
+
+print(max_zeros)
