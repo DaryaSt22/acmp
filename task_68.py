@@ -1,13 +1,24 @@
-# Во входном файле INPUT.TXT содержится ровно 2 строки.
+# Во входном файле содержится ровно 2 строки.
 # В первой содержится слово «School» или «Home» в зависимости от того,
 # где первый раз Вася купил карточку на X поездок.
 # Во второй строке содержится натуральное число X, 1 ≤ X ≤ 1000.
 # В выходной файл следует вывести «Yes», если будет такой день,
 # что дома утром у Васи на карточке окажется ноль поездок и «No» в противном случае.
 
-string = input()
-number = int(input())
-if number <= 1 and string == 'Home':
-    print("Yes")
-else:
-    print("No")
+# string = input()
+# number = int(input())
+#
+# if number % 2 == 0:
+#     if string == 'Home':
+#         print("Yes")
+#     else:
+#         print("No")
+# else:
+#     if string == 'School':
+#         print("No")
+#     else:
+#         print("Yes")
+
+n = int(input())
+for i in range(0, n + 1):
+    print(i ** 2)
