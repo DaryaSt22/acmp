@@ -20,3 +20,19 @@ if abs(x - round(x)) <= 0:
 elif abs(x - round(x)) < 1e-9:
     print(round(x))
 
+
+
+
+k, n, m, d = map(int, input().split())
+
+num = d * k * n * m
+den = k * n * m - n * m - k * m - k * n
+
+if den <= 0 or num % den != 0:
+    print(-1)
+else:
+    x = num // den
+    if x % k == 0 and x % n == 0 and x % m == 0:
+        print(x)
+    else:
+        print(-1)
